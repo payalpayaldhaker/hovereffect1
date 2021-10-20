@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+      
+        <style> 
+          body{ 
+              background-color: black;
+          }
+          .myform >input{ 
+              width:235px ;
+              height: 52px;
+              background-color:#333
+              outline: none;
+              padding-left: 30px;
+              color: #000;
+          }
+          
+          .myform >button{ 
+            width:235px ;
+              height: 52px;
+              background-color:transparent;
+              display: block;
+                margin-top: 10px;
+              color:#fff;
+              border: 1px solid #08fcd7;
+              cursor: pointer;
+              text-align: center;
+              font-size: 1em;
+              line-height: 50px;
+              
+              position: relative;
+                overflow: hidden;
+              
+          }
+          
+          
+          
+          .myform >button[type="submit"] >div{ 
+            width:295px ;
+              height: 52px;
+              background-color: #08fcd7;
+              position: absolute;
+              top: 0px;
+              left:-320px;
+              transform: skewX(-25deg);
+              transition: all 0.5s linear;
+              z-index: 900;
+        
+              
+              
+          }
+          .myform >button[type="submit"]:hover >div{ 
+            left: -25px;
+
+        
+          }
+          .myform >button[type="submit"] >span{ 
+            position: relative;  
+            z-index: 1000;
+          }
+          .myform >button[type="submit"]:hover >span{ 
+              color: #000;
+          
+          }
+        
+        </style>
+
+<body>
+            <form class=myform> 
+                <input type="text" name="fname" placeholder="Name">
+                 <button type="submit" name="submit" > 
+                     <span>send message!</span>
+                    <div></div>
+                 </button>
+            </form>
+</body>
+
+</html>
